@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=NeRF
-#SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=karensyl@hawaii.edu
-#SBATCH --partition=gpu
-#SBATCH --time=3-00:00:00
-#SBATCH --nodes=1
-#SBATCH --cpus-per-task=8
-#SBATCH --mem=32G
-#SBATCH --gres=gpu:1
+SBATCH --job-name=NeRF
+SBATCH --mail-type=BEGIN,END,FAIL
+SBATCH --mail-user=karensyl@hawaii.edu
+SBATCH --partition=gpu
+SBATCH --time=3-00:00:00
+SBATCH --nodes=1
+SBATCH --cpus-per-task=8
+SBATCH --mem=32G
+SBATCH --gres=gpu:1
 
 module purge
 module load tools/Vim/8.1-foss-2018b-Python-2.7.15
